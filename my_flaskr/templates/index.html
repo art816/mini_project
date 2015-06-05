@@ -5,9 +5,9 @@
         <p>{{post.author.nickname}} says: <b>{{post.body}}</b></p>
     {% endfor %}
 
-    <table border="1">
+    <table border="1" class="table">
     {% for device in devices  %}
-        <tr><th colspan="2" class="cities">{{device}}</th></tr>
+        <tr><th colspan="2" class="title">{{device}}</th></tr>
         {% for param in devices[device].params_dict.values() %}
             <tr><td>{{param.name}}</td><td>{{param.value}}</td></tr>
         {% endfor %}
