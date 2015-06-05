@@ -7,7 +7,7 @@
 
     <table border="1">
     {% for device in devices  %}
-        <tr><th colspan="2">{{device}}</th></tr>
+        <tr><th colspan="2" class="cities">{{device}}</th></tr>
         {% for param in devices[device].params_dict.values() %}
             <tr><td>{{param.name}}</td><td>{{param.value}}</td></tr>
         {% endfor %}
