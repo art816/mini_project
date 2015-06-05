@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Hello, {{user.nickname}}!</h1>
+    {% for post in posts %}
+        <p>{{post.author.nickname}} says: <b>{{post.body}}</b></p>
+    {% endfor %}
+
+    <table border="1">
+    {% for device in devices  %}
+        <tr><th colspan="2">{{device}}</th></tr>
+        {% for param in devices[device].params_dict.values() %}
+            <tr><td>{{param.name}}</td><td>{{param.value}}</td></tr>
+        {% endfor %}
+        </p>
+    {% endfor %}
+{% endblock %}:
