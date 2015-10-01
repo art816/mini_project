@@ -2,10 +2,10 @@
 from flask import render_template, request
 
 import sys
-sys.path.append('../../NMS')
+# sys.path.append('../../NMS')
 sys.path.append('app/templates')
 
-from nms.core.context import ContextCreator
+# from nms.core.context import ContextCreator
 
 def route(app):
     print('views')
